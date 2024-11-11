@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Market Game</h1>
+        <p>Make smart crypto decisions each month based on news and charts!</p>
+    </header>
+
+    <main>
+        <section id="market">
+            <h2>Market Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cryptocurrency</th>
+                        <th>Price</th>
+                        <th>24h Change</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-list"></tbody>
+            </table>
+        </section>
+
+        <section id="portfolio">
+            <h2>Your Portfolio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cryptocurrency</th>
+                        <th>Amount</th>
+                        <th>Value (USD)</th>
+                    </tr>
+                </thead>
+                <tbody id="portfolio-list"></tbody>
+            </table>
+        </section>
+
+        <section id="news">
+            <h2>Market News</h2>
+            <p id="news-text">Loading...</p>
+        </section>
+
+        <section id="chart">
+            <h2>Price Chart</h2>
+            <canvas id="price-chart"></canvas>
+        </section>
+
+        <button id="next-month">Next Month</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crypto Game</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
